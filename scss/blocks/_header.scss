@@ -2,7 +2,7 @@
   position: relative;
 
   background-color: var(--footer-bg);
-  background-image: url("./../../img/header/header-bg.jpg");
+  background-image: url("./../img/header/header-bg.jpg");
   background-size: cover;
   aspect-ratio: 1440 / 1084;
 
@@ -10,7 +10,7 @@
 
   color: var(--header-text-color);
 
-  @include retina-bg(url("./../../img/header/header-bg@2x.jpg"));
+  @include retina-bg(url("./../img/header/header-bg@2x.jpg"));
 
   a {
     color: var(--header-text-color);
