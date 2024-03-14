@@ -1,4 +1,4 @@
-@import "./../fonts/Gilroy/stylesheet.css";
+@import "./fonts/Gilroy/stylesheet.css";
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 @import url(https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 html,
@@ -128,7 +128,7 @@ legend {
 .header {
   position: relative;
   background-color: var(--footer-bg);
-  background-image: url("./../../img/header/header-bg.jpg");
+  background-image: url("./../img/header/header-bg.jpg");
   background-size: cover;
   aspect-ratio: 1440/1084;
   padding-top: 40px;
@@ -136,7 +136,7 @@ legend {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .header {
-    background-image: url("./../../img/header/header-bg@2x.jpg");
+    background-image: url("./../img/header/header-bg@2x.jpg");
   }
 }
 .header a {
@@ -150,7 +150,7 @@ legend {
 }
 
 .header__nav {
-  margin-bottom: clamp(30px, 0.875rem + 5vw, 86px);
+  margin-bottom: clamp(30px, 0.875em + 5vw, 86px);
 }
 
 .header__content {
