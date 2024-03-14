@@ -1,0 +1,27 @@
+.products {
+  border-color: #f7f7f7;
+  margin-bottom: 15px;
+}
+
+.products__title {
+  text-align: center;
+
+  @include title();
+}
+.products__tabs {
+  text-align: center;
+
+  margin-bottom: 40px;
+  margin-top: 32px;
+
+  @include mobile() {
+    display: none;
+  }
+}
+.products__slider {
+  margin: 40px 0 60px;
+}
+
+.products__link {
+  text-align: center;
+}

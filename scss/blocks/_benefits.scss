@@ -1,0 +1,24 @@
+.benefits {
+  padding: clamp(40px, 1.071rem + 7.14vw, 120px) 0;
+
+  background-color: #fff;
+}
+
+.benefits__grids {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+  @include tablet() {
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 20px;
+  }
+}
+
+.benefits__title {
+  @include title();
+  @include tablet() {
+    padding: 5px;
+    border: 2px solid black;
+  }
+}

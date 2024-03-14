@@ -1,0 +1,21 @@
+.cart__link {
+  @include tablet {
+    justify-self: end;
+  }
+}
+
+.cart__count {
+  display: inline-block;
+  background-color: var(--accent);
+  border-radius: 45%;
+
+  padding: 0 6px;
+  font-weight: 700;
+  line-height: 25px;
+
+  font-family: var(--font-cards);
+}
+
+.cart__content {
+  text-align: center;
+}

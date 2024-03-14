@@ -1,0 +1,21 @@
+.benefit {
+  @include tablet() {
+    padding: 5px;
+    border: 2px solid black;
+  }
+}
+
+.benefit__title {
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.benefit__text {
+  font-size: 16px;
+  line-height: 1.85;
+  opacity: 0.8;
+  margin-bottom: 14px;
+  max-width: 284px;
+}

@@ -1,0 +1,33 @@
+.tab-controls {
+  display: inline-flex;
+  padding: 6px;
+  border-radius: 44px;
+  background: #eee;
+}
+
+.tab-control__btns {
+  padding: 7px 20px;
+  height: 45px;
+
+  border-radius: 32px;
+  color: rgba(31, 31, 31, 0.8);
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.85;
+
+  transition: background 0.2s ease-in;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  &--active {
+    background: #fff;
+    font-weight: 500;
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}

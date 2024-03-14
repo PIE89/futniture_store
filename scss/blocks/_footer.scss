@@ -1,0 +1,104 @@
+.footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text-color);
+  padding: 118px 0 56px 0;
+
+  a {
+    color: var(--footer-text-color);
+    transition: opacity 0.1s ease-in;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr repeat(3, 2fr);
+  gap: 20px;
+
+  @include tablet {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// Часть с Panto (1 часть)
+
+.footer__desc {
+  margin-bottom: 30px;
+  @include tablet {
+    text-align: center;
+  }
+}
+
+.desc__text {
+  max-width: 293px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-top: 29px;
+}
+
+// Services & Furniture
+
+.footer__services {
+  grid-column-start: 3;
+  @include tablet {
+    grid-column-start: auto;
+    text-align: center;
+  }
+}
+
+.footer__furniture {
+  grid-column-start: 4;
+  @include tablet {
+    grid-column-start: auto;
+    text-align: center;
+  }
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.list__link {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  // opacity: 0.8;
+
+  &--active {
+    font-size: 17px;
+    color: var(--footer-accent) !important;
+  }
+}
+
+// row
+.footer__row {
+  margin-top: clamp(20px, -0.536rem + 8.93vw, 120px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyright {
+  font-family: var(--font-footer-accent);
+  font-size: 15px;
+  letter-spacing: -0.205px;
+  opacity: 0.5;
+}
+
+.footer__links {
+  display: flex;
+  gap: 40px;
+}
+
+.links__text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  // opacity: 0.8;
+}

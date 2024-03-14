@@ -1,0 +1,85 @@
+.header {
+  position: relative;
+
+  background-color: var(--footer-bg);
+  background-image: url("./../../img/header/header-bg.jpg");
+  background-size: cover;
+  aspect-ratio: 1440 / 1084;
+
+  padding-top: 40px;
+
+  color: var(--header-text-color);
+
+  @include retina-bg(url("./../../img/header/header-bg@2x.jpg"));
+
+  a {
+    color: var(--header-text-color);
+  }
+
+  @include mobile() {
+    background-position: center;
+    padding-bottom: 40px;
+  }
+}
+
+.header__nav {
+  margin-bottom: clamp(30px, 0.875rem + 5vw, 86px);
+}
+
+.header__content {
+  text-align: center;
+}
+
+.header__title {
+  line-height: 130%;
+  letter-spacing: -0.8px;
+  text-transform: capitalize;
+  margin-bottom: 14px;
+
+  font-size: clamp(30px, 0.982rem + 4.46vw, 80px);
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+.header__text {
+  max-width: 606px;
+  margin: 0 auto;
+  opacity: 0.8;
+
+  font-size: clamp(16px, 0.857rem + 0.71vw, 24px);
+  text-wrap: balance;
+  line-height: 1.6;
+}
+
+.header__search {
+  // margin: 45px auto 0;
+  margin-top: clamp(15px, 0.402rem + 2.68vw, 45px);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// DOTS
+
+.header__dot--sofa {
+  position: absolute;
+  left: calc(285 * 100% / 1410);
+  top: calc(670 * 100% / 1075);
+}
+
+.header__dot--vase {
+  position: absolute;
+  left: calc(98 * 100% / 1410);
+  top: calc(735 * 100% / 1075);
+}
+
+.header__dot--drop {
+  position: absolute;
+  left: calc(780 * 100% / 1410);
+  top: calc(770 * 100% / 1075);
+}
+
+.header__dot--flowerpot {
+  position: absolute;
+  left: calc(1340 * 100% / 1410);
+  top: calc(809 * 100% / 1075);
+}
